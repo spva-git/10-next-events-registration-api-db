@@ -13,11 +13,11 @@ function ClientPage() {
         <ul>
           {clients.map(client => (
             <li>
-            <Link href={{
-              pathname: '/clients/[id]',
-              query: {id: client.id}
-            }}> The {`${client.name}`} Page</Link>
-          </li>
+              <Link href={{
+                pathname: '/clients/[id]',
+                query: {id: client.id}
+              }}> The {`${client.name}`} Page</Link>
+            </li>
           ))}
         </ul>
       </main>
